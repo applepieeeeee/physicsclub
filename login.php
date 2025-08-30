@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+require_once('../private/config.php');
+
 $servername = "localhost";
 $username = getenv('DB_USERNAME');
 $password = getenv('DB_PASSWORD');
@@ -43,3 +45,17 @@ $stmt->close();
 $conn->close();
 
 ?>
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class = "login">
+            <form action = "login.php" method = "post"></form>
+            <?php
+                if (isset($_GET['error'])) {
+                    echo "<p>Invalid username or password</p>";
+                }
+            ?>
+        </div>
+    </body>
+</html>
