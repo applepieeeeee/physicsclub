@@ -1,7 +1,5 @@
-
 :root{
-    --font: 'Courier New', monospace;
-
+    --font: 'Google Sans Code', monospace;
     --bgcolor: #001027;
     --textcolor: #f7f2ee;
 }
@@ -20,9 +18,9 @@ body{
 h1{
     font-family: var(--font);
     font-size: 30px;
-    text-align: center;
 }
 
 p{
+    font-family: var(--font);
     font-size: 22px;
 }
