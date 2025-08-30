@@ -13,6 +13,26 @@
 
     <body>
         <h1> welcome to the bua physics club page! </h1>
+
+        <div class = "login">
+            <h2> admin login </h2>
+            <form action = "login.php" method = "post">
+                <label for = "username"> username: </label>
+                <input type = "text" id = "username" name = "username" required>
+
+                <label for = "password"> password :</label>
+                <input type = "password" id = "password" name = "password" required>
+
+                <button type = "submit"> login </button>
+            </form>
+
+            <?php 
+                if (isset($_GET['error'])) {
+                    echo '<p class = "error"> invalid username or password. </p>';
+                }
+            ?>
+            
+        </div>
     </body>
 
 </html>
