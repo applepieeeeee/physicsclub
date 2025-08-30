@@ -7,6 +7,7 @@ $password = "password";
 $dbname = "physicsclub";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
+
 if ($conn -> connect_error){
     die("connected cailed: " . $conn -> connect_error);
 }
