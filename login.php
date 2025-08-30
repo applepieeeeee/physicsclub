@@ -43,11 +43,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
         <title> bua physics club </title>
+        
         <link rel = "preconnect" href = "https://fonts.googleapis.com">
         <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@400&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
-        
     </head>
     <body>
         <h1> welcome to the bua physics club page! </h1>
