@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$servername = "localhost";
-$username = "admin";
-$password = "password";
-$dbname = "physicsclub";
+$servername = getenv('DB_SERVER');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
+$dbname = getenv('DB_DATABASE');
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
