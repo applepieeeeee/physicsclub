@@ -11,4 +11,7 @@ if ($conn -> connect_error){
     die("connected cailed: " . $conn -> connect_error);
 }
 
+$input_username = $_POST['username'];
+$input_password = $_POST['password'];
+
 ?>
