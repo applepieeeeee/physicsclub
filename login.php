@@ -39,4 +39,7 @@ if ($stmt -> num_rows > 0){
     exit;
 }
 
+$stmt->close();
+$conn->close();
+
 ?>
