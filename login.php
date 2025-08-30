@@ -16,6 +16,6 @@ $input_password = $_POST['password'];
 
 $sql = "SELECT username, password FROM admins WHERE username = ?";
 $stmt = $conn -> prepare($sql);
-$stmt -> bind_param("s", $input_username)''
+$stmt -> bind_param("s", $input_username);
 
 ?>
