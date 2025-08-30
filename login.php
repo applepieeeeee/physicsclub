@@ -1,15 +1,15 @@
 <?php
 session_start();
 
-$servername = getenv('DB_SERVER');
+$servername = "localhost";
 $username = getenv('DB_USERNAME');
 $password = getenv('DB_PASSWORD');
-$dbname = getenv('DB_DATABASE');
+$dbname = "physicsclub";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn -> connect_error){
-    die("connected cailed: " . $conn -> connect_error);
+    die("connection failed: " . $conn -> connect_error);
 }
 
 $input_username = $_POST['username'];
