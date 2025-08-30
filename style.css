@@ -1,1 +1,28 @@
 
+:root{
+    --font: 'Courier New', monospace;
+
+    --bgcolor: #001027;
+    --textcolor: #f7f2ee;
+}
+
+body{
+    font-family: var(--font);
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    font-family: var(--font);
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    font-size: 22px;
+}
