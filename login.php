@@ -18,4 +18,10 @@ $sql = "SELECT username, password FROM admins WHERE username = ?";
 $stmt = $conn -> prepare($sql);
 $stmt -> bind_param("s", $input_username);
 
+$stmt -> execute();
+$stmt -> store_result();
+$stmt -> bind_result($db_username, $db_password);
+$stmt -> fetch();
+
+
 ?>
