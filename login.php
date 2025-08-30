@@ -24,4 +24,19 @@ $stmt -> bind_result($db_username, $db_password);
 $stmt -> fetch();
 
 
+if ($stmt -> num_rows > 0){
+    if (password_verify($input_password, $db_password)){
+        $_SESSION['loggedin'] = true;
+        $_SESSION['username'] = $db_username;
+        header("Location: admin_dashboard.php");
+        exit;
+    } else {
+        header("Location: login.html?error=1");
+        exit;
+    }
+} else {
+    header("Location: login.html?error=1");
+    exit;
+}
+
 ?>
